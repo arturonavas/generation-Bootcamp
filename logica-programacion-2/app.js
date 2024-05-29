@@ -8,7 +8,7 @@ document.getElementById('temperatureForm').addEventListener('submit', function(e
     if (isNaN(celsius)) { //<-- si no es un numero devuelve un error en el html
         document.getElementById('results').innerHTML = "<p style='color: red;'>por favor, ingrese un numero</p>";
         return;
-    }else{
+    }else{ //<-- de otro modo si es un numero empieza los calculos
     //calculo matematico del convertidor
     let fahrenheit = (celsius * 9/5) + 32;
     let kelvin = celsius + 273.15;
